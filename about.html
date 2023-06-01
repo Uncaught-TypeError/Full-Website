@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Nick's Cave</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo3.png" alt="Nick's Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="Prof.html">PROFESSION</a></li>
+                    <li><a href="project.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class='bx bx-menu' id="menuIcon" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+
+    <!-- ------About Me Content-------- -->
+    <div class="c1">
+        <section class="about-me">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Your Friendly Neighbour Hood Web Developer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus aut quam rem accusantium et consequuntur incidunt. Mollitia, harum perferendis exercitationem voluptatibus possimus dolore, atque iste repellendus iusto dolor rerum!</p>
+                    <a href="Prof.html" class="visit-btn3">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/me.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+
+    <hr class="hr1">
+
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet unde a deleniti fugit ex explicabo <br> vitae id molestias possimus.</p>
+        <div class="icons">
+            <i class='bx bxl-facebook-circle' ></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-linkedin-square' ></i>
+        </div>
+        <p>Join my Discord Server <i class='bx bxl-discord-alt' ></i></p>
+    </section>
+
+
+    <!-- script -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+            document.getElementById("menuIcon").style.display = "none";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            document.getElementById("menuIcon").style.display = "block";
+        }
+    </script>
+
+
+
+</body>
+</html>
